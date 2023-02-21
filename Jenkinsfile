@@ -14,7 +14,6 @@ pipeline {
       
       steps {
         echo 'cleaning the application ...'
-        sh "npm install npm-clean -g"
         sh "npm-clean remove unused dependency: {{unused_module_in_dependencies}}"
       }
     }
