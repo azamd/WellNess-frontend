@@ -10,14 +10,7 @@ pipeline {
         sh "npm install"
             }
                } 
-      stage("App Clean") {
-      
-      steps {
-        echo 'cleaning the application ...'
-        sh "npm-clean remove unused dependency: {{unused_module_in_dependencies}}"
-      }
-    }
-         
+       
     stage("App Build") {
       
       steps {
