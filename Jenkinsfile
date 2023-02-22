@@ -2,14 +2,6 @@ pipeline {
     agent any
 
     stages {
-      
-      stage("App Node-Modules") {
-      
-      steps {
-        echo 'fetching the application node-modules ...'
-        sh "npm install"
-            }
-               } 
        
     stage("App Build") {
       
