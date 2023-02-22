@@ -13,7 +13,7 @@ pipeline {
         stage("Docker Image") {
                 steps{
                     echo 'building the application Docker container image..'
-                    sh 'docker build -t amdaziz/wellnessfront .'
+                    sh 'docker build -t amdaziz/wellness-front .'
                 }
         }
         stage("DockerHub Login") {
