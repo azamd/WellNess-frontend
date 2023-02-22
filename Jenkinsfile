@@ -27,7 +27,7 @@ pipeline {
         stage("DockerHub Login") {
                 steps{
                     echo 'user login to DockerHub..'
-                    sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u amdaziz -p azizdocker'
+                    sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u amdaziz -p aziz.docker'
                 }
         }
         stage("Push to DockerHub") {
