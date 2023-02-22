@@ -2,8 +2,8 @@ import React from "react";
 import useFetchArticleData from "./useFetchArticleData.js";
 import { Link } from "react-router-dom";
 import { Event } from "@mui/icons-material";
-import { LocationOn } from "@mui/icons-material";
-import { VisibilityIcon } from "@mui/icons-material";
+//import { LocationOn } from "@mui/icons-material";
+//import { VisibilityIcon } from "@mui/icons-material";
 import { PersonOutline } from "@mui/icons-material";
 import "../doctors/drs.css";
 

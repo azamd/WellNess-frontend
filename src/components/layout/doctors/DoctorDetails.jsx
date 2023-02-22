@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import AOS from "aos";
+//import { useEffect } from "react";
+//import AOS from "aos";
 import "aos/dist/aos.css";
 import useFetchSingleDoctor from "./useFetchSingleDoctor";
 import Button from "react-bootstrap/Button";

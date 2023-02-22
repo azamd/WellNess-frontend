@@ -2,8 +2,8 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { Blockquote } from "@yozora/react-blockquote";
-import { useEffect, useState } from "react";
-import AOS from "aos";
+//import { useEffect, useState } from "react";
+//import AOS from "aos";
 import "aos/dist/aos.css";
 import Button from "react-bootstrap/Button";
 import { PlayCircleOutlineRounded } from "@mui/icons-material";
@@ -13,14 +13,14 @@ import "./video.css";
 import VideoEmbed from "./VideoEmbed";
 
 const HeroSection = () => {
-  useEffect(() => {
+  /*useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, []);
+  }, []);*/
 
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  //const [show, setShow] = useState(false);
+  //const handleClose = () => setShow(false);
+  //const handleShow = () => setShow(true);
 
   const showVideo = () => {
     return <VideoEmbed />;

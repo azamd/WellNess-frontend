@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-import ManageUsers from "./ManageUsers";
+//import ManageUsers from "./ManageUsers";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import ManageAppointments from "./ManageAppointments";
@@ -16,7 +16,7 @@ const AppointmentsForm = ({ as, dataToEdit, show, handleVanish }) => {
     appointmentRate: "",
   });
 
-  const { AppId, AppHour, AppDate, AppStatus, AppReport, appointmentRate } =
+  const { /*AppId*/ AppHour, AppDate, /*AppStatus,AppReport, appointmentRate*/ } =
     data;
 
   useEffect(() => {

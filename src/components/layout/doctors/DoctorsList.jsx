@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AccessTime } from "@mui/icons-material";
 import { Vaccines } from "@mui/icons-material";
 import { LocationOn } from "@mui/icons-material";
-import { VisibilityIcon } from "@mui/icons-material";
+//import { VisibilityIcon } from "@mui/icons-material";
 import "./drs.css";
 
 const DoctorsList = () => {

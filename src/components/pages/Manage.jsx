@@ -1,9 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { Footer, Header } from "../layout/general/index";
-import { useEffect } from "react";
-import AOS from "aos";
+//import { useEffect } from "react";
+//import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 import FullWidthTabs from "../layout/manage/FullWidthTabs";
 
 const Manage = () => {
@@ -25,12 +26,8 @@ const Manage = () => {
 
       <Footer />
       <div>
-        <a
-          href="#"
-          className="scroll-top d-flex align-items-center justify-content-center"
-        >
-          <i className="bi bi-arrow-up-short"></i>
-        </a>
+        <Link to="." className="scroll-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></Link>
+
       </div>
     </div>
   );

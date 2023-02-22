@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Button } from "@mui/icons-material";
-import SideSearch from "../layout/blog/SideSearch";
+//import { Button } from "@mui/icons-material";
+//import SideSearch from "../layout/blog/SideSearch";
 import DoctorDetails from "../layout/doctors/DoctorDetails";
 import { Header, Footer } from "../layout/general/index";
 import { Link } from "react-router-dom";
-import { AccessTime } from "@mui/icons-material";
+/*import { AccessTime } from "@mui/icons-material";
 import { Vaccines } from "@mui/icons-material";
 import { LocationOn } from "@mui/icons-material";
-import { VisibilityIcon } from "@mui/icons-material";
+import { VisibilityIcon } from "@mui/icons-material";*/
 
 const SingleDoctor = () => {
   useEffect(() => {

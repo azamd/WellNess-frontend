@@ -9,7 +9,7 @@ const useFetchSingleDoctor = () => {
 
 
     useEffect(() => {
-        const fetchData = async() => {
+        const fetchData = async () => {
             try {
 
 
@@ -30,7 +30,7 @@ const useFetchSingleDoctor = () => {
         };
 
         fetchData();
-    }, []);
+    });
 
     return {
         expert,
