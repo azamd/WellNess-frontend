@@ -32,9 +32,6 @@ pipeline {
          stage("Deploy") {
                 steps{
             
-                    echo 'Starting Minikube...'
-                    sh 'minikube start'
-                    echo 'Minikube started'
                     echo 'Accessing Namespace...'
                     sh 'minikube kubectl -- config set-context --current --namespace=wellness-front'
                     echo 'Applying deployment.yaml'
