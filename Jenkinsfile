@@ -32,8 +32,8 @@ pipeline {
                     echo 'building the application Docker container image..'
                     script {
                           echo "Building docker images"
-                          def buildArgs = """\
-                          -f Dockerfile \ ."""
+                          def buildArgs = """\ 
+                          -f Dockerfile\."""
                 docker.build(
                    "${params.Image_Name}:${params.Image_Tag}",
                    buildArgs)
