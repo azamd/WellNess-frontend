@@ -11,11 +11,14 @@ pipeline {
             name: "Image_Name", 
             defaultValue: 'wellness-front', 
             description: '')
-         string(
+      string(
             name: "Image_Tag", 
             defaultValue: 'latest', 
             description: 'Image tag')
-         
+      string(
+            name: "DockerfileName", 
+            defaultValue: '.', 
+            description: '')   
     }
 
     stages {
@@ -32,10 +35,9 @@ pipeline {
                     echo 'building the application Docker container image..'
                     script {
                           echo "Building docker images"
-                          def buildArgs = """\ 
-                          -f Dockerfile\."""
+                          
                 docker.build(
-                   "${params.Image_Name}:${params.Image_Tag}",
+                   "${params.Image_Name}:${params.Image_Tag} ${params.DockerfileName}",
                    buildArgs)
             }
                 }
