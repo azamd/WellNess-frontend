@@ -22,8 +22,13 @@ pipeline {
     }
 
     stages {
-       
-    
+        
+       stage("App Build") {
+      steps {
+        echo 'building the application...'
+        sh "npm run build"
+      }
+    } 
         stage("Docker Image") {
                 steps{
                     echo 'building the application Docker container image..'
