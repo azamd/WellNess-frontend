@@ -36,9 +36,8 @@ pipeline {
                     script {
                           echo "Building docker images"
                           
-                docker.build(
-                   "${params.Image_Name}:${params.Image_Tag} ${params.DockerfileName}")
-            }
+                         docker.build("${params.Image_Name}:${params.Image_Tag} ${params.DockerfileName}")
+                        }
                 }
         }
         
