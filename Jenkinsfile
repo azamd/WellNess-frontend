@@ -22,7 +22,12 @@ pipeline {
     }
 
     stages {
-        
+        stage("App Node Modules") {
+      steps {
+        echo 'fetching node modules...'
+        sh "npm install"
+      }
+    }   
        stage("App Build") {
       steps {
         echo 'building the application...'
