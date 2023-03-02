@@ -27,7 +27,7 @@ pipeline {
       
       steps {
         echo 'building the application ...'
-        sh "npm run build "
+        sh "npm run build"
       }
     }
         stage("Docker Image") {
